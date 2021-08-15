@@ -8,9 +8,9 @@ const useStyle = makeStyles(theme => ({
     footer: {
         backgroundColor: "white",
         width: '100%',
-        zIndex: 1302,
+        zIndex: 2,
         position: 'relative',
-        marginTop: '0em',
+        marginBottom: '0em',
         borderTop: '10px solid #FFF5EB'
     },
     center: {

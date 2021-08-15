@@ -11,7 +11,6 @@ import MenuIcon from '@material-ui/icons/Menu'
 import { ListItemText } from '@material-ui/core';
 import logo from '../../assets/images/logo.svg';
 
-
 function ElevationScroll(props) {
     const { children } = props;
 
@@ -108,6 +107,7 @@ const useStyles = makeStyles(theme => ({
     },
     drawer: {
         backgroundColor: 'white',
+        zIndex: '5000'
     },
     drawerItem: {
         ...theme.typography.tab,
@@ -150,9 +150,9 @@ export default function Header(props) {
 
     const routes = [
         { name: 'Home', link: '/', activeIndex: 0 },
-        { name: 'Services', link: '/services', activeIndex: 1 },
-        { name: 'About Me', link: '/about', activeIndex: 2 },
-        { name: 'Contact Us', link: '/contact', activeIndex: 3 },
+        { name: 'Services', link: '../Services', activeIndex: 1 },
+        { name: 'About Us', link: '../AboutUs', activeIndex: 2 },
+        { name: 'Contact Us', link: '../ContactUs', activeIndex: 3 },
 
     ];
     useEffect(() => {
