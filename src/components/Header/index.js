@@ -150,9 +150,9 @@ export default function Header(props) {
 
     const routes = [
         { name: 'Home', link: '/', activeIndex: 0 },
-        { name: 'Services', link: '../Services', activeIndex: 1 },
-        { name: 'About Us', link: '../AboutUs', activeIndex: 2 },
-        { name: 'Contact Us', link: '../ContactUs', activeIndex: 3 },
+        { name: 'Services', link: '/components/Services', activeIndex: 1 },
+        { name: 'About Us', link: '/components/AboutUs', activeIndex: 2 },
+        { name: 'Contact Us', link: '/components/ContactUs', activeIndex: 3 },
 
     ];
     useEffect(() => {
@@ -166,7 +166,6 @@ export default function Header(props) {
                         }
                     }
                     break;
-
                 default:
                     break;
             }

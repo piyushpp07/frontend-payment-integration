@@ -205,7 +205,7 @@ export default function ContactUs(props) {
                                     <a href='tel:8602204936'
                                         style={{ textDecoration: 'none', color: 'inherit' }}
                                     >
-                                        (777) 777-7777
+                                        +91 6268575625
                                     </a>
                                 </Typography>
                             </Grid>
@@ -227,7 +227,7 @@ export default function ContactUs(props) {
                                     <a href='mailto:ritikjain2727@gmail.com'
                                         style={{ textDecoration: 'none', color: 'inherit' }}
                                     >
-                                        reactjsdeveloper45@gmail.com
+                                        piyushpar7@gmail.com
                                     </a>
                                 </Typography>
                             </Grid>
@@ -327,7 +327,7 @@ export default function ContactUs(props) {
             >
                 <Grid item>
                     <img
-                        src='https://www.softwaresuggest.com/blog/wp-content/uploads/2019/02/realtime-banking.png'
+                        src='https://images.unsplash.com/photo-1601055283742-8b27e81b5553?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80'
                         alt='banking'
                         style={{ width: matchesXS ? '27em' : matchesSM ? '35em' : matchesMD ? '50em' : '45em' }}
                     />

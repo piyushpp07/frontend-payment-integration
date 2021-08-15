@@ -6,7 +6,7 @@ import Header from './components/Header';
 import theme from './components/Theme';
 import ContactUs from './components/ContactUs';
 import AboutUs from './components/AboutUs';
-import Donate from './components/Donate'
+import Services from './components/Services';
 
 
 function MediaCard() {
@@ -19,7 +19,8 @@ function MediaCard() {
         </div>
         <h3>The COVID-19 pandemic is one of the worst health and economic crises in modern history and it continues to require the best of humanity to overcome. Your donation to this fund will help stop the spread of the virus, including the highly contagious Delta variant, to protect us all.</h3>
         <h4>Your donation to this fund will help stop the spread of variants such as Delta around the world and give communities on the front lines of the crisis the resources they need to act quickly and protect the most vulnerable. As the situation evolves, the fund will evolve, too, supporting long-term recovery and education efforts run by local, vetted organizations in the most affected regions. We will work with our partners on the ground to get funds where they're most needed.</h4>
-        <Link to='./components/Donate'><button style={styles.btn} onClick={Donate}>Donate Now</button></Link>
+        <Link to='/components/Services'><button style={styles.btn} >
+          <span>Donate Now</span></button></Link>
       </div>
     </div>
   );
@@ -32,17 +33,10 @@ function App() {
     <ThemeProvider theme={theme} >
       <BrowserRouter>
         <Switch>
-          <Route exact path='/'
-            render={(props) => (
-              <MediaCard
-                {...props}
-                setValue={setValue}
-                setSelectedIndex={setSelectedIndex}
-              />
-            )}
-          />
-          <Route exact path='/components/ContactUs' component={ContactUs} />
-          <Route exact path='/components/AboutUs' component={AboutUs} />
+          <Route exact path={'/'} component={MediaCard} />
+          <Route exact path={'/components/Services'} component={Services} />
+          <Route exact path={'/components/ContactUs'} component={ContactUs} />
+          <Route exact path={'/components/AboutUs'} component={AboutUs} />
         </Switch>
         <Header value={value}
           setValue={setValue}
@@ -50,12 +44,12 @@ function App() {
           setSelectedIndex={setSelectedIndex}
         />
 
-        <Footer value={value}
-          setValue={setValue}
-          selectedIndex={selectedIndex}
-          setSelectedIndex={setSelectedIndex}
-        />
       </BrowserRouter>
+      <Footer value={value}
+        setValue={setValue}
+        selectedIndex={selectedIndex}
+        setSelectedIndex={setSelectedIndex}
+      />
 
     </ThemeProvider>
   );
