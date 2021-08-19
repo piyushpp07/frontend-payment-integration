@@ -7,8 +7,8 @@ toast.configure();
 export default function Services() {
     const [amount, setAmount] = useState(0);
     const [product] = React.useState({
-        name: "Tesla Roadster",
-        description: "Cool car"
+        name: "Donation",
+        description: "Donated for a cause"
     });
 
 
@@ -19,6 +19,7 @@ export default function Services() {
         );
         const { status } = response.data;
         console.log("Response:", response.data);
+        setAmount(0);
         if (status === "success") {
             toast("Success! Check email for details", { type: "success" });
         } else {
@@ -41,9 +42,8 @@ export default function Services() {
             <StripeCheckout stripeKey='pk_test_51JObFKSAm54TGSWjZQQVnpytQbBKaz7MqR7ewLtoeqZSsO9SZUl7n3ZZm3zEYV3sYmQnZaVbzZCttT3in6KJTxKS00lJalhL2a'
                 token={handleToken}
                 amount={amount * 100}
-                name="Tesla Roadster"
-            // billingAddress
-            // shippingAddress
+                name="donated for a cause"
+
             />
 
         </div>
@@ -51,6 +51,7 @@ export default function Services() {
 
 }
 const styles = {
+
     content: {
         marginTop: '0',
         width: '92%'
@@ -60,7 +61,7 @@ const styles = {
     },
 
     main: {
-        marginTop: '5em',
+        marginTop: '1em',
         height: '50em',
         backgroundColor: '#E6DDC6',
         display: 'flex',

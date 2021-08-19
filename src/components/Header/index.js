@@ -179,7 +179,7 @@ export default function Header(props) {
                 className={classes.tabContainer}
                 value={props.value}
                 onChange={handleChange}
-                indicatorColor='#0B72B9'
+                indicatorColor='secondary'
             >
                 {routes.map((route, index) => (
                     <Tab
