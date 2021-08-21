@@ -14,7 +14,7 @@ export default function Services() {
 
     async function handleToken(token) {
         const response = await axios.post(
-            "http://localhost:5000/checkout/",
+            "https://backend-pay.herokuapp.com/checkout",
             { token, product, amount }
         );
         const { status } = response.data;
